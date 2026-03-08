@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# Éditeurs
+.vscode/settings.json
+*.code-workspace
+
+# Node (si utilisé)
+node_modules/
+npm-debug.log
+
+# Archives
+*.zip
+*.tar.gz

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonnes pratiques HTML — Cours HTML Complet</title>
+  <link rel="stylesheet" href="../assets/css/style-cours.css">
+</head>
+<body><div class="mise-en-page">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="sidebar-logo-titre">📘 Cours HTML Complet</span><span class="sidebar-logo-sous">Du débutant à l'expert</span></div>
+    <nav>
+      <div class="nav-section">Accueil</div>
+      <ul><li><a href="../index.html">🏠 Accueil du cours</a></li></ul>
+      <div class="nav-section">🟢 Niveau Débutant</div>
+      <ul>
+        <li><a href="../modules/01-introduction/cours.html">01 — Introduction au Web</a></li>
+        <li><a href="../modules/02-environnement/cours.html">02 — Environnement dev</a></li>
+        <li><a href="../modules/03-structure/cours.html">03 — Structure HTML</a></li>
+        <li><a href="../modules/04-balises-base/cours.html">04 — Balises de base</a></li>
+        <li><a href="../modules/05-liens-navigation/cours.html">05 — Liens &amp; Navigation</a></li>
+      </ul>
+      <div class="nav-section">🔵 Niveau Intermédiaire</div>
+      <ul>
+        <li><a href="../modules/06-images-medias/cours.html">06 — Images &amp; Médias</a></li>
+        <li><a href="../modules/07-listes/cours.html">07 — Listes HTML</a></li>
+        <li><a href="../modules/08-tableaux/cours.html">08 — Tableaux HTML</a></li>
+        <li><a href="../modules/09-formulaires/cours.html">09 — Formulaires</a></li>
+        <li><a href="../modules/10-semantique/cours.html">10 — HTML Sémantique</a></li>
+      </ul>
+      <div class="nav-section">🟠 Niveau Avancé</div>
+      <ul>
+        <li><a href="../modules/11-accessibilite/cours.html">11 — Accessibilité</a></li>
+        <li><a href="../modules/12-seo/cours.html">12 — HTML &amp; SEO</a></li>
+        <li><a href="../modules/13-css-integration/cours.html">13 — Intégration CSS</a></li>
+        <li><a href="../modules/14-js-integration/cours.html">14 — Intégration JS</a></li>
+        <li><a href="../modules/15-html-avance/cours.html">15 — HTML Avancé</a></li>
+      </ul>
+      <div class="nav-section">🔴 Niveau Expert</div>
+      <ul>
+        <li><a href="../modules/16-performance/cours.html">16 — Performance Web</a></li>
+        <li><a href="../modules/17-architecture/cours.html">17 — Architecture</a></li>
+        <li><a href="../modules/18-projets/cours.html">18 — Projets pratiques</a></li>
+      </ul>
+      <div class="nav-section">📎 Annexes</div>
+      <ul>
+        <li><a href="../annexes/reference-balises.html">Référence des balises</a></li>
+        <li><a href="../annexes/memo-rapide.html">Mémo rapide</a></li>
+        <li><a href="../annexes/erreurs-frequentes.html">Erreurs fréquentes</a></li>
+        <li><a href="../annexes/bonnes-pratiques.html">Bonnes pratiques</a></li>
+        <li><a href="../annexes/glossaire.html">Glossaire</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="contenu-principal"><div class="contenu-interieur">
+    <nav class="fil-ariane"><a href="../index.html">Accueil</a> <span>›</span> <span>Bonnes pratiques HTML</span></nav>
+    <header class="module-hero">
+      <div class="niveau"><span class="badge" style="color:#a0aec0;border-color:#a0aec0;background:rgba(160,174,192,0.1);">📎 Annexe</span></div>
+      <h1>Bonnes pratiques HTML</h1>
+    </header>
+
+      <div class="encadre encadre-succes"><span class="encadre-titre">✅ Checklist complète — à vérifier avant chaque mise en ligne</span>
+        <ul>
+          <li><strong>Structure</strong> : DOCTYPE présent, lang sur html, charset UTF-8 en premier dans head</li>
+          <li><strong>Title</strong> : unique, 50-60 caractères, mot-clé principal en tête</li>
+          <li><strong>Meta description</strong> : unique, 150-160 caractères, incitative</li>
+          <li><strong>Un seul h1</strong> par page, hiérarchie des titres logique</li>
+          <li><strong>Alt</strong> sur toutes les images (descriptif pour informatives, vide pour décoratives)</li>
+          <li><strong>Labels</strong> associés à tous les champs de formulaire</li>
+          <li><strong>Liens</strong> avec texte descriptif, liens externes avec noopener noreferrer</li>
+          <li><strong>width et height</strong> sur toutes les images (évite le CLS)</li>
+          <li><strong>loading="lazy"</strong> sur les images hors viewport initial</li>
+          <li><strong>Sémantique</strong> : header, nav, main, article, section, aside, footer utilisés correctement</li>
+          <li><strong>Scripts</strong> en defer ou en bas du body</li>
+          <li><strong>Validation</strong> : zéro erreur sur validator.w3.org</li>
+          <li><strong>Responsive</strong> : viewport meta, testé sur mobile</li>
+          <li><strong>Open Graph</strong> : og:title, og:description, og:image, og:url</li>
+          <li><strong>Favicon</strong> : svg + png fallback</li>
+          <li><strong>Accessibilité</strong> : navigation au clavier, aria-labels, contraste suffisant</li>
+        </ul>
+      </div>
+
+      <h2>📁 Organisation des fichiers</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>À faire</th><th>À éviter</th></tr></thead>
+        <tbody>
+          <tr><td>Noms de fichiers en minuscules : <code>a-propos.html</code></td><td>Majuscules : <code>APropos.html</code></td></tr>
+          <tr><td>Tirets comme séparateurs : <code>mes-photos.html</code></td><td>Espaces : <code>mes photos.html</code></td></tr>
+          <tr><td>Extension .html : <code>index.html</code></td><td>Extension .htm (obsolète)</td></tr>
+          <tr><td>Images dans <code>assets/images/</code></td><td>Tout à la racine du projet</td></tr>
+          <tr><td>CSS dans <code>assets/css/</code></td><td>Style dans le HTML (sauf exception)</td></tr>
+          <tr><td>JS dans <code>assets/js/</code></td><td>Script inline sur chaque page</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2>💬 Conventions de code</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>Règle</th><th>Exemple</th></tr></thead>
+        <tbody>
+          <tr><td>Indentation 2 espaces</td><td>Réglable dans VS Code (Spaces: 2)</td></tr>
+          <tr><td>Toutes les balises en minuscules</td><td><code>&lt;p&gt;</code> pas <code>&lt;P&gt;</code></td></tr>
+          <tr><td>Valeurs des attributs entre guillemets doubles</td><td><code>class="hero"</code> pas <code>class='hero'</code></td></tr>
+          <tr><td>Fermer toutes les balises non auto-fermantes</td><td><code>&lt;p&gt;Texte&lt;/p&gt;</code></td></tr>
+          <tr><td>Un élément par ligne pour le code complexe</td><td>Attributs sur des lignes séparées pour les longues balises</td></tr>
+          <tr><td>Commentaires pour les grandes sections</td><td><code>&lt;!-- SECTION: Navigation --&gt;</code></td></tr>
+        </tbody>
+      </table></div>
+
+  </div>
+  <footer class="pied-page"><p>Cours HTML Complet &nbsp;·&nbsp;
+    <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+  </p></footer></main>
+</div>
+<script src="../assets/js/navigation.js"></script>
+</body></html>

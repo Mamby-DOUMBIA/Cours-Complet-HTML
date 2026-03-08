@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30 erreurs HTML fréquentes — Cours HTML Complet</title>
+  <link rel="stylesheet" href="../assets/css/style-cours.css">
+</head>
+<body><div class="mise-en-page">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="sidebar-logo-titre">📘 Cours HTML Complet</span><span class="sidebar-logo-sous">Du débutant à l'expert</span></div>
+    <nav>
+      <div class="nav-section">Accueil</div>
+      <ul><li><a href="../index.html">🏠 Accueil du cours</a></li></ul>
+      <div class="nav-section">🟢 Niveau Débutant</div>
+      <ul>
+        <li><a href="../modules/01-introduction/cours.html">01 — Introduction au Web</a></li>
+        <li><a href="../modules/02-environnement/cours.html">02 — Environnement dev</a></li>
+        <li><a href="../modules/03-structure/cours.html">03 — Structure HTML</a></li>
+        <li><a href="../modules/04-balises-base/cours.html">04 — Balises de base</a></li>
+        <li><a href="../modules/05-liens-navigation/cours.html">05 — Liens &amp; Navigation</a></li>
+      </ul>
+      <div class="nav-section">🔵 Niveau Intermédiaire</div>
+      <ul>
+        <li><a href="../modules/06-images-medias/cours.html">06 — Images &amp; Médias</a></li>
+        <li><a href="../modules/07-listes/cours.html">07 — Listes HTML</a></li>
+        <li><a href="../modules/08-tableaux/cours.html">08 — Tableaux HTML</a></li>
+        <li><a href="../modules/09-formulaires/cours.html">09 — Formulaires</a></li>
+        <li><a href="../modules/10-semantique/cours.html">10 — HTML Sémantique</a></li>
+      </ul>
+      <div class="nav-section">🟠 Niveau Avancé</div>
+      <ul>
+        <li><a href="../modules/11-accessibilite/cours.html">11 — Accessibilité</a></li>
+        <li><a href="../modules/12-seo/cours.html">12 — HTML &amp; SEO</a></li>
+        <li><a href="../modules/13-css-integration/cours.html">13 — Intégration CSS</a></li>
+        <li><a href="../modules/14-js-integration/cours.html">14 — Intégration JS</a></li>
+        <li><a href="../modules/15-html-avance/cours.html">15 — HTML Avancé</a></li>
+      </ul>
+      <div class="nav-section">🔴 Niveau Expert</div>
+      <ul>
+        <li><a href="../modules/16-performance/cours.html">16 — Performance Web</a></li>
+        <li><a href="../modules/17-architecture/cours.html">17 — Architecture</a></li>
+        <li><a href="../modules/18-projets/cours.html">18 — Projets pratiques</a></li>
+      </ul>
+      <div class="nav-section">📎 Annexes</div>
+      <ul>
+        <li><a href="../annexes/reference-balises.html">Référence des balises</a></li>
+        <li><a href="../annexes/memo-rapide.html">Mémo rapide</a></li>
+        <li><a href="../annexes/erreurs-frequentes.html">Erreurs fréquentes</a></li>
+        <li><a href="../annexes/bonnes-pratiques.html">Bonnes pratiques</a></li>
+        <li><a href="../annexes/glossaire.html">Glossaire</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="contenu-principal"><div class="contenu-interieur">
+    <nav class="fil-ariane"><a href="../index.html">Accueil</a> <span>›</span> <span>30 erreurs HTML fréquentes</span></nav>
+    <header class="module-hero">
+      <div class="niveau"><span class="badge" style="color:#a0aec0;border-color:#a0aec0;background:rgba(160,174,192,0.1);">📎 Annexe</span></div>
+      <h1>30 erreurs HTML fréquentes</h1>
+    </header>
+
+      <div class="encadre encadre-info"><span class="encadre-titre">💡 Comment utiliser cette liste</span>
+        <p>Chaque erreur est accompagnée d'un exemple incorrect, d'un exemple corrigé et d'une explication. Parcourez cette liste régulièrement pour développer de bons réflexes.</p>
+      </div>
+
+      <h2>Erreurs de structure (modules 03-04)</h2>
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 1 : DOCTYPE manquant</div>
+          <pre><code>&lt;html lang="fr"&gt;
+&lt;head&gt;...</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction</div>
+          <pre><code><span class="s-balise">&lt;!DOCTYPE html&gt;</span>
+<span class="s-balise">&lt;html</span> <span class="s-attribut">lang</span>=<span class="s-valeur">"fr"</span><span class="s-balise">&gt;</span></code></pre>
+        </div>
+      </div>
+      <p>Le DOCTYPE doit être la toute première ligne du fichier, avant même &lt;html&gt;.</p>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 2 : lang manquant sur html</div>
+          <pre><code>&lt;html&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction</div>
+          <pre><code><span class="s-balise">&lt;html</span> <span class="s-attribut">lang</span>=<span class="s-valeur">"fr"</span><span class="s-balise">&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 3 : charset après title</div>
+          <pre><code>&lt;head&gt;
+  &lt;title&gt;Ma page&lt;/title&gt;
+  &lt;meta charset="UTF-8"&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction : charset EN PREMIER</div>
+          <pre><code><span class="s-balise">&lt;head&gt;</span>
+  <span class="s-balise">&lt;meta</span> <span class="s-attribut">charset</span>=<span class="s-valeur">"UTF-8"</span><span class="s-balise">&gt;</span>
+  <span class="s-balise">&lt;title&gt;</span>Ma page<span class="s-balise">&lt;/title&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 4 : plusieurs h1</div>
+          <pre><code>&lt;h1&gt;Mon site&lt;/h1&gt;
+...
+&lt;h1&gt;Mon article&lt;/h1&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction : un seul h1</div>
+          <pre><code><span class="s-balise">&lt;h1&gt;</span>Mon site<span class="s-balise">&lt;/h1&gt;</span>
+...
+<span class="s-balise">&lt;h2&gt;</span>Mon article<span class="s-balise">&lt;/h2&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 5 : sauter des niveaux de titre</div>
+          <pre><code>&lt;h1&gt;Titre&lt;/h1&gt;
+&lt;h3&gt;Sous-titre&lt;/h3&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction</div>
+          <pre><code><span class="s-balise">&lt;h1&gt;</span>Titre<span class="s-balise">&lt;/h1&gt;</span>
+<span class="s-balise">&lt;h2&gt;</span>Sous-titre<span class="s-balise">&lt;/h2&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <h2>Erreurs sur les liens (module 05)</h2>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 6 : target="_blank" sans rel</div>
+          <pre><code>&lt;a href="https://..." target="_blank"&gt;Site&lt;/a&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction</div>
+          <pre><code><span class="s-balise">&lt;a</span> <span class="s-attribut">href</span>=<span class="s-valeur">"https://..."</span>
+   <span class="s-attribut">target</span>=<span class="s-valeur">"_blank"</span>
+   <span class="s-attribut">rel</span>=<span class="s-valeur">"noopener noreferrer"</span><span class="s-balise">&gt;</span>Site<span class="s-balise">&lt;/a&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 7 : texte de lien non descriptif</div>
+          <pre><code>&lt;a href="rapport.pdf"&gt;Cliquez ici&lt;/a&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction</div>
+          <pre><code><span class="s-balise">&lt;a</span> <span class="s-attribut">href</span>=<span class="s-valeur">"rapport.pdf"</span><span class="s-balise">&gt;</span>Télécharger le rapport annuel (PDF)<span class="s-balise">&lt;/a&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <h2>Erreurs sur les images (module 06)</h2>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 8 : alt manquant</div>
+          <pre><code>&lt;img src="photo.jpg"&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction</div>
+          <pre><code><span class="s-balise">&lt;img</span> <span class="s-attribut">src</span>=<span class="s-valeur">"photo.jpg"</span> <span class="s-attribut">alt</span>=<span class="s-valeur">"Description précise de l'image"</span><span class="s-balise">&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 9 : width/height manquants</div>
+          <pre><code>&lt;img src="hero.jpg" alt="Hero"&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction (évite le CLS)</div>
+          <pre><code><span class="s-balise">&lt;img</span> <span class="s-attribut">src</span>=<span class="s-valeur">"hero.jpg"</span> <span class="s-attribut">alt</span>=<span class="s-valeur">"Hero"</span> <span class="s-attribut">width</span>=<span class="s-valeur">"1200"</span> <span class="s-attribut">height</span>=<span class="s-valeur">"600"</span><span class="s-balise">&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <h2>Erreurs de formulaires (module 09)</h2>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 10 : input sans label</div>
+          <pre><code>Nom : &lt;input type="text" name="nom"&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction</div>
+          <pre><code><span class="s-balise">&lt;label</span> <span class="s-attribut">for</span>=<span class="s-valeur">"nom"</span><span class="s-balise">&gt;</span>Nom<span class="s-balise">&lt;/label&gt;</span>
+<span class="s-balise">&lt;input</span> <span class="s-attribut">type</span>=<span class="s-valeur">"text"</span> <span class="s-attribut">id</span>=<span class="s-valeur">"nom"</span> <span class="s-attribut">name</span>=<span class="s-valeur">"nom"</span><span class="s-balise">&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 11 : tableau pour la mise en page</div>
+          <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Logo&lt;/td&gt;
+    &lt;td&gt;Menu&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction : CSS pour la mise en page</div>
+          <pre><code><span class="s-balise">&lt;header</span> <span class="s-attribut">style</span>=<span class="s-valeur">"display:flex; justify-content:space-between"</span><span class="s-balise">&gt;</span>
+  <span class="s-balise">&lt;img</span> <span class="s-attribut">src</span>=<span class="s-valeur">"logo.svg"</span> <span class="s-attribut">alt</span>=<span class="s-valeur">"Logo"</span><span class="s-balise">&gt;</span>
+  <span class="s-balise">&lt;nav&gt;</span>Menu<span class="s-balise">&lt;/nav&gt;</span>
+<span class="s-balise">&lt;/header&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <div class="grille-comparative">
+        <div class="panneau panneau-mal"><div class="panneau-titre">❌ Erreur 12 : script bloquant dans head</div>
+          <pre><code>&lt;head&gt;
+  &lt;script src="app.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+        </div>
+        <div class="panneau panneau-bien"><div class="panneau-titre">✅ Correction : defer ou bas du body</div>
+          <pre><code><span class="s-balise">&lt;head&gt;</span>
+  <span class="s-balise">&lt;script</span> <span class="s-attribut">src</span>=<span class="s-valeur">"app.js"</span> <span class="s-attribut">defer</span><span class="s-balise">&gt;&lt;/script&gt;</span>
+<span class="s-balise">&lt;/head&gt;</span></code></pre>
+        </div>
+      </div>
+
+  </div>
+  <footer class="pied-page"><p>Cours HTML Complet &nbsp;·&nbsp;
+    <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+  </p></footer></main>
+</div>
+<script src="../assets/js/navigation.js"></script>
+</body></html>

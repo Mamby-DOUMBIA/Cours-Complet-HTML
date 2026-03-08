@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Référence complète des balises HTML — Cours HTML Complet</title>
+  <link rel="stylesheet" href="../assets/css/style-cours.css">
+</head>
+<body><div class="mise-en-page">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="sidebar-logo-titre">📘 Cours HTML Complet</span><span class="sidebar-logo-sous">Du débutant à l'expert</span></div>
+    <nav>
+      <div class="nav-section">Accueil</div>
+      <ul><li><a href="../index.html">🏠 Accueil du cours</a></li></ul>
+      <div class="nav-section">🟢 Niveau Débutant</div>
+      <ul>
+        <li><a href="../modules/01-introduction/cours.html">01 — Introduction au Web</a></li>
+        <li><a href="../modules/02-environnement/cours.html">02 — Environnement dev</a></li>
+        <li><a href="../modules/03-structure/cours.html">03 — Structure HTML</a></li>
+        <li><a href="../modules/04-balises-base/cours.html">04 — Balises de base</a></li>
+        <li><a href="../modules/05-liens-navigation/cours.html">05 — Liens &amp; Navigation</a></li>
+      </ul>
+      <div class="nav-section">🔵 Niveau Intermédiaire</div>
+      <ul>
+        <li><a href="../modules/06-images-medias/cours.html">06 — Images &amp; Médias</a></li>
+        <li><a href="../modules/07-listes/cours.html">07 — Listes HTML</a></li>
+        <li><a href="../modules/08-tableaux/cours.html">08 — Tableaux HTML</a></li>
+        <li><a href="../modules/09-formulaires/cours.html">09 — Formulaires</a></li>
+        <li><a href="../modules/10-semantique/cours.html">10 — HTML Sémantique</a></li>
+      </ul>
+      <div class="nav-section">🟠 Niveau Avancé</div>
+      <ul>
+        <li><a href="../modules/11-accessibilite/cours.html">11 — Accessibilité</a></li>
+        <li><a href="../modules/12-seo/cours.html">12 — HTML &amp; SEO</a></li>
+        <li><a href="../modules/13-css-integration/cours.html">13 — Intégration CSS</a></li>
+        <li><a href="../modules/14-js-integration/cours.html">14 — Intégration JS</a></li>
+        <li><a href="../modules/15-html-avance/cours.html">15 — HTML Avancé</a></li>
+      </ul>
+      <div class="nav-section">🔴 Niveau Expert</div>
+      <ul>
+        <li><a href="../modules/16-performance/cours.html">16 — Performance Web</a></li>
+        <li><a href="../modules/17-architecture/cours.html">17 — Architecture</a></li>
+        <li><a href="../modules/18-projets/cours.html">18 — Projets pratiques</a></li>
+      </ul>
+      <div class="nav-section">📎 Annexes</div>
+      <ul>
+        <li><a href="../annexes/reference-balises.html">Référence des balises</a></li>
+        <li><a href="../annexes/memo-rapide.html">Mémo rapide</a></li>
+        <li><a href="../annexes/erreurs-frequentes.html">Erreurs fréquentes</a></li>
+        <li><a href="../annexes/bonnes-pratiques.html">Bonnes pratiques</a></li>
+        <li><a href="../annexes/glossaire.html">Glossaire</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="contenu-principal"><div class="contenu-interieur">
+    <nav class="fil-ariane"><a href="../index.html">Accueil</a> <span>›</span> <span>Référence complète des balises HTML</span></nav>
+    <header class="module-hero">
+      <div class="niveau"><span class="badge" style="color:#a0aec0;border-color:#a0aec0;background:rgba(160,174,192,0.1);">📎 Annexe</span></div>
+      <h1>Référence complète des balises HTML</h1>
+    </header>
+
+      <h2>Balises de structure</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>Balise</th><th>Description</th><th>Autoferme</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Déclaration HTML5</td><td>✅</td></tr>
+          <tr><td><code>&lt;html&gt;</code></td><td>Élément racine du document</td><td>❌</td></tr>
+          <tr><td><code>&lt;head&gt;</code></td><td>Métadonnées du document</td><td>❌</td></tr>
+          <tr><td><code>&lt;body&gt;</code></td><td>Contenu visible de la page</td><td>❌</td></tr>
+          <tr><td><code>&lt;title&gt;</code></td><td>Titre du document (onglet, SEO)</td><td>❌</td></tr>
+          <tr><td><code>&lt;meta&gt;</code></td><td>Métadonnée (charset, viewport, description…)</td><td>✅</td></tr>
+          <tr><td><code>&lt;link&gt;</code></td><td>Lien vers ressource externe (CSS, favicon)</td><td>✅</td></tr>
+          <tr><td><code>&lt;script&gt;</code></td><td>Script JavaScript</td><td>❌</td></tr>
+          <tr><td><code>&lt;style&gt;</code></td><td>CSS interne</td><td>❌</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2>Balises sémantiques HTML5</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>Balise</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;header&gt;</code></td><td>En-tête du site ou d'une section</td></tr>
+          <tr><td><code>&lt;nav&gt;</code></td><td>Navigation principale</td></tr>
+          <tr><td><code>&lt;main&gt;</code></td><td>Contenu principal (unique par page)</td></tr>
+          <tr><td><code>&lt;article&gt;</code></td><td>Contenu autonome et indépendant</td></tr>
+          <tr><td><code>&lt;section&gt;</code></td><td>Section thématique avec titre</td></tr>
+          <tr><td><code>&lt;aside&gt;</code></td><td>Contenu secondaire / barre latérale</td></tr>
+          <tr><td><code>&lt;footer&gt;</code></td><td>Pied de page ou de section</td></tr>
+          <tr><td><code>&lt;figure&gt;</code></td><td>Contenu illustratif avec légende</td></tr>
+          <tr><td><code>&lt;figcaption&gt;</code></td><td>Légende d'une figure</td></tr>
+          <tr><td><code>&lt;address&gt;</code></td><td>Coordonnées de contact</td></tr>
+          <tr><td><code>&lt;details&gt;</code></td><td>Bloc repliable/dépliable</td></tr>
+          <tr><td><code>&lt;summary&gt;</code></td><td>Titre cliquable d'un details</td></tr>
+          <tr><td><code>&lt;dialog&gt;</code></td><td>Boîte de dialogue modale native</td></tr>
+          <tr><td><code>&lt;template&gt;</code></td><td>Fragment HTML non rendu</td></tr>
+          <tr><td><code>&lt;time&gt;</code></td><td>Date/heure lisible par machine</td></tr>
+          <tr><td><code>&lt;mark&gt;</code></td><td>Texte mis en évidence</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2>Balises de texte et formatage</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>Balise</th><th>Description</th><th>Inline/Block</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;h1&gt; … &lt;h6&gt;</code></td><td>Titres de niveaux 1 à 6</td><td>Block</td></tr>
+          <tr><td><code>&lt;p&gt;</code></td><td>Paragraphe</td><td>Block</td></tr>
+          <tr><td><code>&lt;br&gt;</code></td><td>Saut de ligne forcé</td><td>Inline ✅</td></tr>
+          <tr><td><code>&lt;hr&gt;</code></td><td>Séparation thématique horizontale</td><td>Block ✅</td></tr>
+          <tr><td><code>&lt;strong&gt;</code></td><td>Importance forte (gras sémantique)</td><td>Inline</td></tr>
+          <tr><td><code>&lt;em&gt;</code></td><td>Emphase (italique sémantique)</td><td>Inline</td></tr>
+          <tr><td><code>&lt;small&gt;</code></td><td>Texte secondaire, mentions légales</td><td>Inline</td></tr>
+          <tr><td><code>&lt;del&gt;</code></td><td>Texte supprimé (barré)</td><td>Inline</td></tr>
+          <tr><td><code>&lt;ins&gt;</code></td><td>Texte inséré (souligné)</td><td>Inline</td></tr>
+          <tr><td><code>&lt;sub&gt;</code></td><td>Indice (H₂O)</td><td>Inline</td></tr>
+          <tr><td><code>&lt;sup&gt;</code></td><td>Exposant (m²)</td><td>Inline</td></tr>
+          <tr><td><code>&lt;abbr&gt;</code></td><td>Abréviation avec définition</td><td>Inline</td></tr>
+          <tr><td><code>&lt;code&gt;</code></td><td>Code en ligne</td><td>Inline</td></tr>
+          <tr><td><code>&lt;pre&gt;</code></td><td>Texte préformaté (espaces conservés)</td><td>Block</td></tr>
+          <tr><td><code>&lt;kbd&gt;</code></td><td>Touche clavier</td><td>Inline</td></tr>
+          <tr><td><code>&lt;blockquote&gt;</code></td><td>Citation longue</td><td>Block</td></tr>
+          <tr><td><code>&lt;q&gt;</code></td><td>Citation courte inline</td><td>Inline</td></tr>
+          <tr><td><code>&lt;cite&gt;</code></td><td>Titre d'une œuvre</td><td>Inline</td></tr>
+          <tr><td><code>&lt;span&gt;</code></td><td>Conteneur inline générique</td><td>Inline</td></tr>
+          <tr><td><code>&lt;div&gt;</code></td><td>Conteneur block générique</td><td>Block</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2>Balises de listes</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>Balise</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;ul&gt;</code></td><td>Liste non ordonnée (puces)</td></tr>
+          <tr><td><code>&lt;ol&gt;</code></td><td>Liste ordonnée (numéros)</td></tr>
+          <tr><td><code>&lt;li&gt;</code></td><td>Élément d'une liste ul ou ol</td></tr>
+          <tr><td><code>&lt;dl&gt;</code></td><td>Liste de définitions</td></tr>
+          <tr><td><code>&lt;dt&gt;</code></td><td>Terme à définir</td></tr>
+          <tr><td><code>&lt;dd&gt;</code></td><td>Définition du terme</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2>Balises de tableaux</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>Balise</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;table&gt;</code></td><td>Tableau</td></tr>
+          <tr><td><code>&lt;caption&gt;</code></td><td>Titre/légende du tableau</td></tr>
+          <tr><td><code>&lt;thead&gt;</code></td><td>Groupe d'en-tête du tableau</td></tr>
+          <tr><td><code>&lt;tbody&gt;</code></td><td>Corps du tableau</td></tr>
+          <tr><td><code>&lt;tfoot&gt;</code></td><td>Pied du tableau</td></tr>
+          <tr><td><code>&lt;tr&gt;</code></td><td>Ligne du tableau</td></tr>
+          <tr><td><code>&lt;th&gt;</code></td><td>Cellule d'en-tête</td></tr>
+          <tr><td><code>&lt;td&gt;</code></td><td>Cellule de données</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2>Balises de formulaires</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>Balise</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;form&gt;</code></td><td>Formulaire</td></tr>
+          <tr><td><code>&lt;input&gt;</code></td><td>Champ de saisie (multiples types)</td></tr>
+          <tr><td><code>&lt;textarea&gt;</code></td><td>Zone de texte multiligne</td></tr>
+          <tr><td><code>&lt;select&gt;</code></td><td>Liste déroulante</td></tr>
+          <tr><td><code>&lt;option&gt;</code></td><td>Option d'un select</td></tr>
+          <tr><td><code>&lt;optgroup&gt;</code></td><td>Groupe d'options</td></tr>
+          <tr><td><code>&lt;label&gt;</code></td><td>Étiquette d'un champ</td></tr>
+          <tr><td><code>&lt;fieldset&gt;</code></td><td>Groupe de champs liés</td></tr>
+          <tr><td><code>&lt;legend&gt;</code></td><td>Titre d'un fieldset</td></tr>
+          <tr><td><code>&lt;button&gt;</code></td><td>Bouton cliquable</td></tr>
+          <tr><td><code>&lt;datalist&gt;</code></td><td>Liste de suggestions pour input</td></tr>
+          <tr><td><code>&lt;output&gt;</code></td><td>Résultat de calcul</td></tr>
+          <tr><td><code>&lt;progress&gt;</code></td><td>Barre de progression</td></tr>
+          <tr><td><code>&lt;meter&gt;</code></td><td>Mesure dans une plage connue</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2>Balises médias</h2>
+      <div class="tableau-wrapper"><table>
+        <thead><tr><th>Balise</th><th>Description</th><th>Autoferme</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;img&gt;</code></td><td>Image</td><td>✅</td></tr>
+          <tr><td><code>&lt;picture&gt;</code></td><td>Image responsive avec sources multiples</td><td>❌</td></tr>
+          <tr><td><code>&lt;source&gt;</code></td><td>Source media pour picture/video/audio</td><td>✅</td></tr>
+          <tr><td><code>&lt;video&gt;</code></td><td>Vidéo</td><td>❌</td></tr>
+          <tr><td><code>&lt;audio&gt;</code></td><td>Audio</td><td>❌</td></tr>
+          <tr><td><code>&lt;track&gt;</code></td><td>Sous-titres pour video/audio</td><td>✅</td></tr>
+          <tr><td><code>&lt;iframe&gt;</code></td><td>Cadre intégré (YouTube, maps…)</td><td>❌</td></tr>
+          <tr><td><code>&lt;canvas&gt;</code></td><td>Zone de dessin JavaScript</td><td>❌</td></tr>
+          <tr><td><code>&lt;svg&gt;</code></td><td>Graphique vectoriel</td><td>❌</td></tr>
+        </tbody>
+      </table></div>
+
+  </div>
+  <footer class="pied-page"><p>Cours HTML Complet &nbsp;·&nbsp;
+    <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+  </p></footer></main>
+</div>
+<script src="../assets/js/navigation.js"></script>
+</body></html>

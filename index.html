@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cours HTML Complet — Du débutant à l'expert</title>
+  <meta name="description" content="Cours HTML complet en français. 18 modules progressifs, du débutant absolu au développeur expert. Exemples détaillés, exercices corrigés, annexes de référence.">
+  <link rel="stylesheet" href="assets/css/style-cours.css">
+  <style>
+    .grille-modules{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin-bottom:2rem}
+    .carte-module{background:#1a202c;border:1px solid #2d3748;border-radius:12px;padding:1.5rem;text-decoration:none;color:inherit;transition:transform .2s,border-color .2s,box-shadow .2s;display:flex;flex-direction:column;gap:.5rem}
+    .carte-module:hover{transform:translateY(-3px);border-color:#4a5568;box-shadow:0 8px 32px rgba(0,0,0,.4)}
+    .carte-num{font-size:.75rem;color:#718096;font-family:Consolas,monospace}
+    .carte-titre{font-size:1rem;font-weight:600;color:#e2e8f0}
+    .carte-desc{font-size:.85rem;color:#a0aec0;line-height:1.5}
+    .section-niveau{margin:2rem 0 1rem;font-size:.9rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.4rem 1rem;border-radius:6px;display:inline-block}
+    .sn-debutant{background:rgba(72,187,120,.15);color:#68d391}
+    .sn-intermediaire{background:rgba(66,153,225,.15);color:#63b3ed}
+    .sn-avance{background:rgba(237,137,54,.15);color:#f6ad55}
+    .sn-expert{background:rgba(245,101,101,.15);color:#fc8181}
+    .hero-home{text-align:center;padding:3rem 1rem 2rem;border-bottom:1px solid #2d3748;margin-bottom:2rem}
+    .hero-home h1{font-size:2.2rem;background:linear-gradient(135deg,#63b3ed,#68d391);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.75rem}
+    .hero-home p{color:#a0aec0;font-size:1.1rem;max-width:600px;margin:0 auto 1.5rem}
+    .hero-stats{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}
+    .stat{text-align:center}
+    .stat-num{font-size:1.8rem;font-weight:700;color:#63b3ed}
+    .stat-lbl{font-size:.8rem;color:#718096;text-transform:uppercase;letter-spacing:.05em}
+    .annexes-grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+    .carte-annexe{background:#1a202c;border:1px solid #2d3748;border-radius:8px;padding:1rem;text-decoration:none;color:#a0aec0;font-size:.9rem;transition:color .2s,border-color .2s}
+    .carte-annexe:hover{color:#e2e8f0;border-color:#4a5568}
+  </style>
+</head>
+<body>
+<div class="mise-en-page">
+  <aside class="sidebar">
+    <div class="sidebar-logo"><span class="sidebar-logo-titre">📘 Cours HTML Complet</span><span class="sidebar-logo-sous">Du débutant à l'expert</span></div>
+    <nav>
+      <div class="nav-section">Accueil</div>
+      <ul><li><a href="index.html" class="actif">🏠 Accueil du cours</a></li></ul>
+      <div class="nav-section">🟢 Niveau Débutant</div>
+      <ul>
+        <li><a href="modules/01-introduction/cours.html">01 — Introduction au Web</a></li>
+        <li><a href="modules/02-environnement/cours.html">02 — Environnement dev</a></li>
+        <li><a href="modules/03-structure/cours.html">03 — Structure HTML</a></li>
+        <li><a href="modules/04-balises-base/cours.html">04 — Balises de base</a></li>
+        <li><a href="modules/05-liens-navigation/cours.html">05 — Liens &amp; Navigation</a></li>
+      </ul>
+      <div class="nav-section">🔵 Niveau Intermédiaire</div>
+      <ul>
+        <li><a href="modules/06-images-medias/cours.html">06 — Images &amp; Médias</a></li>
+        <li><a href="modules/07-listes/cours.html">07 — Listes HTML</a></li>
+        <li><a href="modules/08-tableaux/cours.html">08 — Tableaux HTML</a></li>
+        <li><a href="modules/09-formulaires/cours.html">09 — Formulaires</a></li>
+        <li><a href="modules/10-semantique/cours.html">10 — HTML Sémantique</a></li>
+      </ul>
+      <div class="nav-section">🟠 Niveau Avancé</div>
+      <ul>
+        <li><a href="modules/11-accessibilite/cours.html">11 — Accessibilité</a></li>
+        <li><a href="modules/12-seo/cours.html">12 — HTML &amp; SEO</a></li>
+        <li><a href="modules/13-css-integration/cours.html">13 — Intégration CSS</a></li>
+        <li><a href="modules/14-js-integration/cours.html">14 — Intégration JS</a></li>
+        <li><a href="modules/15-html-avance/cours.html">15 — HTML Avancé</a></li>
+      </ul>
+      <div class="nav-section">🔴 Niveau Expert</div>
+      <ul>
+        <li><a href="modules/16-performance/cours.html">16 — Performance Web</a></li>
+        <li><a href="modules/17-architecture/cours.html">17 — Architecture</a></li>
+        <li><a href="modules/18-projets/cours.html">18 — Projets pratiques</a></li>
+      </ul>
+      <div class="nav-section">📎 Annexes</div>
+      <ul>
+        <li><a href="annexes/reference-balises.html">Référence des balises</a></li>
+        <li><a href="annexes/memo-rapide.html">Mémo rapide</a></li>
+        <li><a href="annexes/erreurs-frequentes.html">Erreurs fréquentes</a></li>
+        <li><a href="annexes/bonnes-pratiques.html">Bonnes pratiques</a></li>
+        <li><a href="annexes/glossaire.html">Glossaire</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="contenu-principal">
+    <div class="contenu-interieur">
+      <div class="hero-home">
+        <h1>Cours HTML Complet</h1>
+        <p>De débutant absolu à développeur expert — en français, avec des exemples pratiques pas à pas.</p>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-num">18</div><div class="stat-lbl">Modules</div></div>
+          <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Niveaux</div></div>
+          <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">Annexes</div></div>
+          <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Gratuit</div></div>
+        </div>
+      </div>
+
+      <div class="section-niveau sn-debutant">🟢 Niveau Débutant — Modules 01 à 05</div>
+      <div class="grille-modules">
+        <a href="modules/01-introduction/cours.html" class="carte-module"><span class="carte-num">Module 01</span><span class="carte-titre">Introduction au Web</span><span class="badge badge-debutant">Débutant</span><span class="carte-desc">Histoire du Web, protocole HTTP, rôle du HTML, anatomie d'une balise.</span></a>
+        <a href="modules/02-environnement/cours.html" class="carte-module"><span class="carte-num">Module 02</span><span class="carte-titre">Environnement de développement</span><span class="badge badge-debutant">Débutant</span><span class="carte-desc">VS Code, extensions, Emmet, DevTools, organisation de projet.</span></a>
+        <a href="modules/03-structure/cours.html" class="carte-module"><span class="carte-num">Module 03</span><span class="carte-titre">Structure d'un document HTML</span><span class="badge badge-debutant">Débutant</span><span class="carte-desc">DOCTYPE, html, head, body, meta charset, viewport, title.</span></a>
+        <a href="modules/04-balises-base/cours.html" class="carte-module"><span class="carte-num">Module 04</span><span class="carte-titre">Balises HTML de base</span><span class="badge badge-debutant">Débutant</span><span class="carte-desc">Titres h1-h6, paragraphes, strong, em, code, abbr, entités HTML.</span></a>
+        <a href="modules/05-liens-navigation/cours.html" class="carte-module"><span class="carte-num">Module 05</span><span class="carte-titre">Liens et Navigation</span><span class="badge badge-debutant">Débutant</span><span class="carte-desc">Balise a, chemins relatifs, ancres, mailto, tel, download, nav.</span></a>
+      </div>
+
+      <div class="section-niveau sn-intermediaire">🔵 Niveau Intermédiaire — Modules 06 à 10</div>
+      <div class="grille-modules">
+        <a href="modules/06-images-medias/cours.html" class="carte-module"><span class="carte-num">Module 06</span><span class="carte-titre">Images et Médias</span><span class="badge badge-intermediaire">Intermédiaire</span><span class="carte-desc">img, alt, srcset, picture, formats WebP/AVIF, video, audio.</span></a>
+        <a href="modules/07-listes/cours.html" class="carte-module"><span class="carte-num">Module 07</span><span class="carte-titre">Listes HTML</span><span class="badge badge-intermediaire">Intermédiaire</span><span class="carte-desc">ul, ol, li, dl/dt/dd, listes imbriquées, attributs start/reversed/type.</span></a>
+        <a href="modules/08-tableaux/cours.html" class="carte-module"><span class="carte-num">Module 08</span><span class="carte-titre">Tableaux HTML</span><span class="badge badge-intermediaire">Intermédiaire</span><span class="carte-desc">table, thead/tbody/tfoot, colspan, rowspan, caption, scope.</span></a>
+        <a href="modules/09-formulaires/cours.html" class="carte-module"><span class="carte-num">Module 09</span><span class="carte-titre">Formulaires HTML</span><span class="badge badge-intermediaire">Intermédiaire</span><span class="carte-desc">form, tous les types d'input, select, textarea, validation HTML5.</span></a>
+        <a href="modules/10-semantique/cours.html" class="carte-module"><span class="carte-num">Module 10</span><span class="carte-titre">HTML Sémantique</span><span class="badge badge-intermediaire">Intermédiaire</span><span class="carte-desc">header, nav, main, article, section, aside, footer, figure, details.</span></a>
+      </div>
+
+      <div class="section-niveau sn-avance">🟠 Niveau Avancé — Modules 11 à 15</div>
+      <div class="grille-modules">
+        <a href="modules/11-accessibilite/cours.html" class="carte-module"><span class="carte-num">Module 11</span><span class="carte-titre">Accessibilité Web</span><span class="badge badge-avance">Avancé</span><span class="carte-desc">ARIA, WCAG 2.1, alt text, focus, skip links, audit d'accessibilité.</span></a>
+        <a href="modules/12-seo/cours.html" class="carte-module"><span class="carte-num">Module 12</span><span class="carte-titre">HTML et SEO</span><span class="badge badge-avance">Avancé</span><span class="carte-desc">Meta tags, Open Graph, Twitter Cards, JSON-LD, canonical, robots.</span></a>
+        <a href="modules/13-css-integration/cours.html" class="carte-module"><span class="carte-num">Module 13</span><span class="carte-titre">Intégration CSS</span><span class="badge badge-avance">Avancé</span><span class="carte-desc">link, style, CSS inline, classes, IDs, data-attributes, variables CSS.</span></a>
+        <a href="modules/14-js-integration/cours.html" class="carte-module"><span class="carte-num">Module 14</span><span class="carte-titre">Intégration JavaScript</span><span class="badge badge-avance">Avancé</span><span class="carte-desc">script, defer, async, DOM, événements, manipulation du contenu.</span></a>
+        <a href="modules/15-html-avance/cours.html" class="carte-module"><span class="carte-num">Module 15</span><span class="carte-titre">HTML Avancé</span><span class="badge badge-avance">Avancé</span><span class="carte-desc">data-attributes, dialog natif, template, Web Components.</span></a>
+      </div>
+
+      <div class="section-niveau sn-expert">🔴 Niveau Expert — Modules 16 à 18</div>
+      <div class="grille-modules">
+        <a href="modules/16-performance/cours.html" class="carte-module"><span class="carte-num">Module 16</span><span class="carte-titre">Performance Web</span><span class="badge badge-expert">Expert</span><span class="carte-desc">Core Web Vitals, lazy loading, resource hints, preload, defer/async.</span></a>
+        <a href="modules/17-architecture/cours.html" class="carte-module"><span class="carte-num">Module 17</span><span class="carte-titre">Architecture d'un site</span><span class="badge badge-expert">Expert</span><span class="carte-desc">Structure de dossiers, conventions BEM, templates, checklist pro.</span></a>
+        <a href="modules/18-projets/cours.html" class="carte-module"><span class="carte-num">Module 18</span><span class="carte-titre">Projets pratiques</span><span class="badge badge-expert">Expert</span><span class="carte-desc">5 projets complets : page perso, site multipage, blog, e-commerce, formulaire.</span></a>
+      </div>
+
+      <h2 style="margin-top:2rem">📎 Annexes de référence</h2>
+      <div class="annexes-grille">
+        <a href="annexes/reference-balises.html" class="carte-annexe">📋 Référence des balises</a>
+        <a href="annexes/memo-rapide.html" class="carte-annexe">⚡ Mémo rapide</a>
+        <a href="annexes/erreurs-frequentes.html" class="carte-annexe">🐛 Erreurs fréquentes</a>
+        <a href="annexes/bonnes-pratiques.html" class="carte-annexe">✅ Bonnes pratiques</a>
+        <a href="annexes/glossaire.html" class="carte-annexe">📖 Glossaire</a>
+      </div>
+
+      <h2 style="margin-top:2rem">🔗 Références officielles</h2>
+      <div class="annexes-grille">
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="carte-annexe">MDN Web Docs (FR)</a>
+        <a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer" class="carte-annexe">HTML Living Standard</a>
+        <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer" class="carte-annexe">Validateur W3C</a>
+        <a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer" class="carte-annexe">Can I Use</a>
+        <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer" class="carte-annexe">WAI Accessibilité</a>
+      </div>
+    </div>
+    <footer class="pied-page"><p>Cours HTML Complet &nbsp;·&nbsp; Licence libre — usage éducatif</p></footer>
+  </main>
+</div>
+<script src="assets/js/navigation.js"></script>
+</body>
+</html>
