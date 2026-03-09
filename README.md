@@ -84,7 +84,7 @@ Le cours est organisé en **18 modules progressifs** + des **annexes** de réfé
 
 ```bash
 # Cloner le dépôt (si Git est installé)
-git clone https://github.com/votre-nom/cours-html-complet.git
+git clone https://github.com/Mamby-DOUMBIA/cours-html-complet.git
 
 # Entrer dans le dossier
 cd cours-html-complet
@@ -282,4 +282,4 @@ Vous êtes libre de l'utiliser, le modifier et le partager.
 
 ---
 
-*Cours rédigé avec passion pour rendre l'apprentissage du HTML accessible à tous* 🚀
+*Cours rédigé avec passion par Mamby DOUMBIA pour rendre l'apprentissage du HTML accessible à tous* 🚀
