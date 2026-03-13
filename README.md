@@ -28,39 +28,39 @@ Le cours est organisé en **18 modules progressifs** + des **annexes** de réfé
 
 | N° Module | Titre | Contenu Principal |
 |-----------|-------|-------------------|
-| 01 | [Introduction au Web et au HTML](modules/01-introduction/cours.md) | Histoire du Web, client/serveur, rôles HTML/CSS/JS |
-| 02 | [Environnement de développement](modules/02-environnement/cours.md) | VS Code, extensions, navigateurs, DevTools |
-| 03 | [Structure d'un document HTML](modules/03-structure/cours.md) | DOCTYPE, html, head, body, métadonnées |
-| 04 | [Balises HTML de base](modules/04-balises-base/cours.md) | Titres, paragraphes, formatage, commentaires |
-| 05 | [Liens et navigation](modules/05-liens-navigation/cours.md) | Balise a, liens internes/externes, ancres |
+| 01 | [Introduction au Web et au HTML](modules/01-introduction/cours.html) | Histoire du Web, client/serveur, rôles HTML/CSS/JS |
+| 02 | [Environnement de développement](modules/02-environnement/cours.html) | VS Code, extensions, navigateurs, DevTools |
+| 03 | [Structure d'un document HTML](modules/03-structure/cours.html) | DOCTYPE, html, head, body, métadonnées |
+| 04 | [Balises HTML de base](modules/04-balises-base/cours.html) | Titres, paragraphes, formatage, commentaires |
+| 05 | [Liens et navigation](modules/05-liens-navigation/cours.html) | Balise a, liens internes/externes, ancres |
 
 ### 🔵 Niveau Intermédiaire (Modules 06-10)
 
 | N° Module | Titre | Contenu Principal |
 |-----------|-------|-------------------|
-| 06 | [Images et médias](modules/06-images-medias/cours.md) | img, srcset, picture, audio, vidéo |
-| 07 | [Listes HTML](modules/07-listes/cours.md) | ul, ol, dl, listes imbriquées |
-| 08 | [Tableaux HTML](modules/08-tableaux/cours.md) | thead, tbody, tfoot, colspan, rowspan |
-| 09 | [Formulaires HTML](modules/09-formulaires/cours.md) | form, input, textarea, select, validation |
-| 10 | [HTML sémantique](modules/10-semantique/cours.md) | header, nav, main, section, article, footer |
+| 06 | [Images et médias](modules/06-images-medias/cours.html) | img, srcset, picture, audio, vidéo |
+| 07 | [Listes HTML](modules/07-listes/cours.html) | ul, ol, dl, listes imbriquées |
+| 08 | [Tableaux HTML](modules/08-tableaux/cours.html) | thead, tbody, tfoot, colspan, rowspan |
+| 09 | [Formulaires HTML](modules/09-formulaires/cours.html) | form, input, textarea, select, validation |
+| 10 | [HTML sémantique](modules/10-semantique/cours.html) | header, nav, main, section, article, footer |
 
 ### 🟠 Niveau Avancé (Modules 11-15)
 
 | N° Module | Titre | Contenu Principal |
 |-----------|-------|-------------------|
-| 11 | [Accessibilité Web](modules/11-accessibilite/cours.md) | ARIA, WCAG, bonnes pratiques |
-| 12 | [HTML et SEO](modules/12-seo/cours.md) | Meta tags, Open Graph, données structurées |
-| 13 | [Intégration CSS](modules/13-css-integration/cours.md) | Feuilles de style, sélecteurs, organisation |
-| 14 | [Intégration JavaScript](modules/14-js-integration/cours.md) | Script, DOM, événements |
-| 15 | [HTML avancé](modules/15-html-avance/cours.md) | Data attributes, Web Components, microdata |
+| 11 | [Accessibilité Web](modules/11-accessibilite/cours.html) | ARIA, WCAG, bonnes pratiques |
+| 12 | [HTML et SEO](modules/12-seo/cours.html) | Meta tags, Open Graph, données structurées |
+| 13 | [Intégration CSS](modules/13-css-integration/cours.html) | Feuilles de style, sélecteurs, organisation |
+| 14 | [Intégration JavaScript](modules/14-js-integration/cours.html) | Script, DOM, événements |
+| 15 | [HTML avancé](modules/15-html-avance/cours.html) | Data attributes, Web Components, microdata |
 
 ### 🔴 Niveau Expert (Modules 16-18)
 
 | N° Module | Titre | Contenu Principal |
 |-----------|-------|-------------------|
-| 16 | [Performance Web](modules/16-performance/cours.md) | Lazy loading, resource hints, Core Web Vitals |
-| 17 | [Architecture d'un site Web](modules/17-architecture/cours.md) | Organisation, conventions, templates |
-| 18 | [Projets pratiques complets](modules/18-projets/cours.md) | 5 projets réels de A à Z |
+| 16 | [Performance Web](modules/16-performance/cours.html) | Lazy loading, resource hints, Core Web Vitals |
+| 17 | [Architecture d'un site Web](modules/17-architecture/cours.html) | Organisation, conventions, templates |
+| 18 | [Projets pratiques complets](modules/18-projets/cours.html) | 5 projets réels de A à Z |
 
 ### 📎 Annexes
 
@@ -111,24 +111,24 @@ xdg-open index.html
 Chaque module est **indépendant** et peut être ouvert directement :
 
 ```
-modules/01-introduction/cours.md
-modules/02-environnement/cours.md
-modules/03-structure/cours.md
-modules/04-balises-base/cours.md
-modules/05-liens-navigation/cours.md
-modules/06-images-medias/cours.md
-modules/07-listes/cours.md
-modules/08-tableaux/cours.md
-modules/09-formulaires/cours.md
-modules/10-semantique/cours.md
-modules/11-accessibilite/cours.md
-modules/12-seo/cours.md
-modules/13-css-integration/cours.md
-modules/14-js-integration/cours.md
-modules/15-html-avance/cours.md
-modules/16-performance/cours.md
-modules/17-architecture/cours.md
-modules/18-projets/cours.md
+modules/01-introduction/cours.html
+modules/02-environnement/cours.html
+modules/03-structure/cours.html
+modules/04-balises-base/cours.html
+modules/05-liens-navigation/cours.html
+modules/06-images-medias/cours.html
+modules/07-listes/cours.html
+modules/08-tableaux/cours.html
+modules/09-formulaires/cours.html
+modules/10-semantique/cours.html
+modules/11-accessibilite/cours.html
+modules/12-seo/cours.html
+modules/13-css-integration/cours.html
+modules/14-js-integration/cours.html
+modules/15-html-avance/cours.html
+modules/16-performance/cours.html
+modules/17-architecture/cours.html
+modules/18-projets/cours.html
 ```
 
 ---
@@ -150,53 +150,53 @@ cours-html-complet/
 │
 ├── modules/
 │   ├── 01-introduction/
-│   │   ├── cours.md                  ← Cours complet du module
+│   │   ├── cours.html                  ← Cours complet du module
 │   │   └── exercices/
 │   │       └── exercice-01.html        ← Exercices pratiques
 │   ├── 02-environnement/
-│   │   └── cours.md
+│   │   └── cours.html
 │   ├── 03-structure/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   │       ├── structure-minimale.html
 │   │       └── structure-complete.html
 │   ├── 04-balises-base/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 05-liens-navigation/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 06-images-medias/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 07-listes/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 08-tableaux/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 09-formulaires/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 10-semantique/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 11-accessibilite/
-│   │   └── cours.md
+│   │   └── cours.html
 │   ├── 12-seo/
-│   │   └── cours.md
+│   │   └── cours.html
 │   ├── 13-css-integration/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 14-js-integration/
-│   │   ├── cours.md
+│   │   ├── cours.html
 │   │   └── exemples/
 │   ├── 15-html-avance/
-│   │   └── cours.md
+│   │   └── cours.html
 │   ├── 16-performance/
-│   │   └── cours.md
+│   │   └── cours.html
 │   ├── 17-architecture/
-│   │   └── cours.md
+│   │   └── cours.html
 │   └── 18-projets/
 │       ├── README.md
 │       ├── projet-01-page-personnelle/
